@@ -101,7 +101,7 @@ var announcePokemon = function(pokemon){
 	var distance = geolib.getDistance(
 		{ latitude: location.coords.latitude, longitude: location.coords.longitude },
 		{ latitude: pokemon.Latitude, longitude: pokemon.Longitude });
-	var name = user.pokemonlist[parseInt(pokemon.PokedexTypeId)-1].name;
+	var name = pokeGo.pokemonlist[parseInt(pokemon.PokedexTypeId)-1].name;
 	bot.postMessageToChannel('games', 'Pokemon detected: #' + pokemon.PokedexTypeId + ' - ' + name + ' is ' + distance + ' meters away');
 }
 
