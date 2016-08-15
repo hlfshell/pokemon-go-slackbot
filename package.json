@@ -1,0 +1,20 @@
+{
+  "name": "pokemon-go-slackbot",
+  "version": "1.0.0",
+  "description": "A slackbot for Pokemon Go - it will alert to nearby pokemon.",
+  "main": "chatbot.js",
+  "scripts": {
+    "start": "node chatbot.js"
+  },
+  "author": {
+    "email": "kchester@gmail.com",
+    "name": "Keith Chester"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "geolib": "^2.0.21",
+    "pokemon-go-node-api": "^1.3.5",
+    "slackbots": "^0.5.2"
+  }
+}
