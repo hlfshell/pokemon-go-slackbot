@@ -67,7 +67,11 @@ var heartbeat;
 
 var connectToPokemon = function(){
 	pokeGo.init(opts.username, opts.password, location, 'ptc', function(err){
-		if(err) return console.error("Something has gone wrong", err);
+		if(err){ 
+			console.error("Something has gone wrong with connecting to the server - trying again in 20 seconds", err);
+			setTimeout(connectToPokemon, 20000);
+			return;
+		}
 
 		console.log("Connected");
 
