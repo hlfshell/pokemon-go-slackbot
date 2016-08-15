@@ -95,6 +95,8 @@ var connectToPokemon = function(){
 var handleHeartbeatFailure = function(err){
 	console.log("Heartbeat failure, resetting.", err);
 	clearInterval(heartbeat);
+	pokeGo = null;
+	pokego = new PokemonGo.Pokeio();
 	connectToPokemon();
 };
 
