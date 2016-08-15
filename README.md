@@ -1,5 +1,5 @@
 # pokemon-go-slackbot
-Pokemon Go slack bot that announces nearby pokemon to channel(s). Pair this bot with a Slack token, a login for Pokemon Trainer's Club, and a latitude/longitude position to have a helpful Pokemon announcement in any channels you want.
+Pokemon-Go-SlackBot is a bot that announces nearby pokemon to channel(s). Pair this bot with a Slack token, a login for Pokemon Trainer's Club, and a latitude/longitude position to have a helpful Pokemon announcement in any channels you want.
 
 *Warning: Since api usage is a bannable offense, don't be surprised if the account is banned after awhile. I suggest using a fake throw away Pokemon Trainer's Club account.*
 
@@ -13,7 +13,10 @@ npm install
 node chatbot.js -c config.json
 ```
 ##Automatic
-Coming soon
+```
+npm install -g pokemon-go-slackbot
+pokemon-go-slackbot -c config.json
+```
 
 #Setting up
 You can use any combination of a configuration file and command line parameters you wish.
