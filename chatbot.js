@@ -20,7 +20,7 @@ opts
 	.parse(process.argv);
 
 function optsError(){
-	console.log(arguments);
+	console.log.apply(null, Object.keys(arguments).map(key => arguments[key]));
 	opts.outputHelp();
 	process.exit(0);
 }
@@ -35,7 +35,7 @@ if(opts.config){
 
 	Object.keys(config).forEach(function(key){
 		opts[key] = config[key];
-	});
+	});``
 }
 
 //Validate our settings
