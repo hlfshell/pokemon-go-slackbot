@@ -16,5 +16,8 @@
     "geolib": "^2.0.21",
     "pokemon-go-node-api": "^1.3.5",
     "slackbots": "^0.5.2"
+  },
+  "bin": {
+	"pokemon-go-slackbot": "./chatbot.js"
   }
 }

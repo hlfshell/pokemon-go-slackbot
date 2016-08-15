@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var SlackBot = require('slackbots');
 var PokemonGo = require('pokemon-go-node-api');
 var geolib = require('geolib');
