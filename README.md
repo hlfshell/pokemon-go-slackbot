@@ -49,7 +49,7 @@ Username + password for Pokemon Trainers Club must be provided
 	"token": "slack token",
 	"name": "name",
 	"channels": ["channel"],
-  "exclude": [21, 16, 17],
+	"exclude": [21, 16, 17],
 	"latitude": 38.632699,
 	"longitude": -90.207765
 }
