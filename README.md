@@ -38,7 +38,7 @@ Username + password for Pokemon Trainers Club must be provided
     --latitude [latitude]      Latitude of scan location
     --longitude [longitude]    Longitude of scan location
     --channels <channels>      List of channels to join (comma seperated) ie: general,games,srsbznss,etc
-    
+    --exclude <pokemon-list>   List of pokemon to exclude from announcement (comma seperated) ie: 21,16,17,etc
 ```
 
 ## Configuration file (JSON)
@@ -49,6 +49,7 @@ Username + password for Pokemon Trainers Club must be provided
 	"token": "slack token",
 	"name": "name",
 	"channels": ["channel"],
+  "exclude": [21, 16, 17],
 	"latitude": 38.632699,
 	"longitude": -90.207765
 }
