@@ -53,3 +53,5 @@ Username + password for Pokemon Trainers Club must be provided
 	"longitude": -90.207765
 }
 ```
+## Running the bot
+Be sure to use the bot-name that you provided slack for that API token. Also, bots will not auto-join rooms - you must invite them into the room before they can post to it.,
