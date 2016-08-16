@@ -56,4 +56,6 @@ Username + password for Pokemon Trainers Club must be provided
 ## Running the bot
 You must ensure that you log into Pokemon Go at least once with that account - a Trainer's Club account does not mean you have a Pokemon Go account.
 
+*Warning: It seems that cloud provider IP address ranges are blocked, so you can't use AWS with this.*
+
 Be sure to use the bot-name that you provided slack for that API token. Also, bots will not auto-join rooms - you must invite them into the room before they can post to it.,
