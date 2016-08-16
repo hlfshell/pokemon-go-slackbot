@@ -37,7 +37,7 @@ if(opts.config){
 
 	Object.keys(config).forEach(function(key){
 		opts[key] = config[key];
-	});``
+	});
 }
 
 //Validate our settings
