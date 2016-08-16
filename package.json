@@ -1,6 +1,6 @@
 {
   "name": "pokemon-go-slackbot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A slackbot for Pokemon Go - it will alert to nearby pokemon.",
   "main": "chatbot.js",
   "scripts": {
