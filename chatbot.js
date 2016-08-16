@@ -19,6 +19,7 @@ opts
 	.option('--latitude [latitude]', 'Latitude of scan location', parseFloat)
 	.option('--longitude [longitude]', 'Longitude of scan location', parseFloat)
 	.option('--channels <channels>', 'List of channels to join (comma seperated) ie: general,games,srsbznss,etc', list)
+	.option('--exclude <pokemon-list>', 'List of pokemon to exclude from announcement (comma seperated) ie: 21,16,17,etc', list)
 	.parse(process.argv);
 
 function optsError(){
@@ -65,6 +66,10 @@ var location = {
 };
 
 var encounters = [];
+var excludes = [];
+if(opts.exclude && opts.exclude.length > 0){
+  excludes = opts.exclude
+}
 var heartbeat;
 
 var connectToPokemon = function(){
@@ -106,6 +111,7 @@ var announcePokemon = function(pokemon){
 	var upid = pokemon.EncounterId.high + ' ' + pokemon.EncounterId.low;
 	if(encounters.indexOf(upid) != -1) return;
 	encounters.push(upid);
+	if(excludes.indexOf(pokemon.PokedexTypeId) != -1) return;
 	var distance = geolib.getDistance(
 		{ latitude: location.coords.latitude, longitude: location.coords.longitude },
 		{ latitude: pokemon.Latitude, longitude: pokemon.Longitude });
